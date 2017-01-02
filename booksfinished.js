@@ -8,18 +8,24 @@ const books = [
     {title: 'Harry Potter and the Order of the Phoenix', rating: 'okay'}
 ]
 
-let printBookRating = (books) => {
+let review = (t,r) => `I have finished ${t} and thought it was ${r}`
+
+let renderReview = (a,b) => {
+    return (`<div className='review'>
+        <h2>${review(a,b)}</h2>
+    </div>`)
+}
+
+let reviewBooks = (books) => {
     books.forEach((book) => {
         let title = book.title
         let rating = book.rating
+        console.log();
         console.log(`I read ${title} and thought it was ${rating}`)
+         return title, rating
     })
+    return renderReview('Harry Potter', 'Excellent')
 }
 
-let makeReview = (review) => {
-
-    
-}
-
-printBookRating(books)
+document.getElementById('app').innerHTML = reviewBooks(books)
 
