@@ -8,7 +8,7 @@ const books = [
     {title: 'Harry Potter and the Order of the Phoenix', rating: 'okay'}
 ]
 
-let review = (t,r) => `I have finished ${t} and thought it was ${r}`
+let review = (t,r) => `I have finished <span id="highlight">${t}</span> and thought it was <span id="highlight">${r}</span>`
 
 let renderReview = (a,b) => {
     return (`<div className='review'>

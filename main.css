@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine:400,700');
+
+body{
+  margin: 0; padding: 0;
+  font-family: 'Cousine', monospace;
+  color: lightpink;
+  background-color: darkslateblue;
+}
+
+h2{
+  font-weight: normal;
+}
+
+.content{
+  margin: 20%;
+}
+
+#app{
+  color: white; 
+}
+
+#highlight{
+  font-weight: bold;
+  color: bisque
+}
