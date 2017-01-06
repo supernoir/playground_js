@@ -79,12 +79,10 @@ console.log(displayCurrencyOptions());
 
 	console.log("The base currency is " + baseCurr());
 
-
-	$.doneEach('.foo', function(){
+//	$.doneEach('.foo', function(){
 		$('.js-title').text(title('es-ES'));
 		$('.js-currencieslist').append(displayCurrentCurrencies());
 		$('.js-selectcurrency').append(displayCurrencyOptions());
-	});
-
+//	});
 
 })(jQuery);
