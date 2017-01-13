@@ -24,7 +24,7 @@ let reviewBooks = (books) => {
         console.log(`I read ${title} and thought it was ${rating}`)
          return title, rating
     })
-    return renderReview('Harry Potter', 'Excellent')
+    return renderReview(books[0].title, books[0].rating)
 }
 
 document.getElementById('app').innerHTML = reviewBooks(books)
